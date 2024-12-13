@@ -1,6 +1,6 @@
 # Sorting Algorithms in C++
 
-This project implements multiple sorting algorithms in C++ and provides a user-friendly interface to choose an algorithm for sorting a list of numbers. It also measures the execution time of each sorting algorithm.
+This project implements multiple sorting algorithms in C++ and provides a user-friendly interface to choose an algorithm for sorting a list of numbers. It also measures the execution time of each sorting algorithm with nanosecond precision.
 
 ## Features
 - **Implemented Algorithms:**
@@ -10,7 +10,7 @@ This project implements multiple sorting algorithms in C++ and provides a user-f
   - Merge Sort
   - Quick Sort
 - **Performance Measurement:**
-  - The program calculates the time taken by each sorting algorithm to sort the array.
+  - The program calculates the time taken by each sorting algorithm to sort the array, now displayed in nanoseconds (ns).
 - **Interactive User Interface:**
   - Users can input an array of numbers and select the sorting algorithm to apply.
 
@@ -18,7 +18,7 @@ This project implements multiple sorting algorithms in C++ and provides a user-f
 1. The user provides the number of elements and the array elements.
 2. The program displays a menu of sorting algorithms.
 3. Based on the user's choice, the selected sorting algorithm is applied to the array.
-4. The sorted array and the time taken for sorting are displayed.
+4. The sorted array and the time taken for sorting are displayed in nanoseconds.
 
 ## Prerequisites
 - A C++ compiler (e.g., GCC, Clang, or MSVC).
@@ -28,11 +28,11 @@ This project implements multiple sorting algorithms in C++ and provides a user-f
 1. Clone or download this repository.
 2. Compile the program using a C++ compiler. For example:
    ```bash
-   g++ sorting_algorithms.cpp -o sorting_algorithms
+   g++ -O0 sortingAlgorithms.cpp -o sortingAlgorithms
    ```
 3. Run the executable:
    ```bash
-   ./sorting_algorithms
+   ./sortingAlgorithms
    ```
 4. Follow the on-screen instructions to enter the array elements and select a sorting algorithm.
 
@@ -53,7 +53,7 @@ Enter your choice: 4
 ```
 Sorted using Merge Sort:
 2 4 6 8 9
-Time taken: 0 ms
+Time taken: 12345 ns
 ```
 
 ## Sorting Algorithm Details

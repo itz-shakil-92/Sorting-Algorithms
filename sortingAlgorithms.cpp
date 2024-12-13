@@ -121,7 +121,7 @@ int main() {
     cout << "Enter your choice: ";
     cin >> choice;
 
-    auto start = high_resolution_clock::now();
+    auto start = chrono::steady_clock::now();
 
     switch (choice) {
         case 1:
@@ -149,11 +149,13 @@ int main() {
             return 1;
     }
 
-    auto end = high_resolution_clock::now();
-    auto duration = duration_cast<milliseconds>(end - start);
+auto end = chrono::steady_clock::now();
+auto duration = chrono::duration_cast<nanoseconds>(end - start);
+cout << "Time taken: " << duration.count() << " ns\n";
 
-    displayArray(arr);
-    cout << "Time taken: " << duration.count() << " ms\n";
+displayArray(arr);
+
+
 
     return 0;
 }

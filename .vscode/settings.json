@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "*.css": "css",
+        "type_traits": "cpp",
+        "iostream": "cpp",
+        "chrono": "cpp"
+    }
+}
