@@ -3,7 +3,7 @@
 This project implements multiple sorting algorithms in C++ and provides a user-friendly interface to choose an algorithm for sorting a list of numbers. It also measures the execution time of each sorting algorithm with nanosecond precision.
 
 ## Features
-- **Implemented Algorithms:**
+- **Implemented Algorithms: **
   - Bubble Sort
   - Selection Sort
   - Insertion Sort
